@@ -85,6 +85,7 @@ body {
   text-transform: uppercase;
   color: var(--txt-c-accent);
   text-align: center;
+  margin: 35px 0 10px 0;
 }
 
 .front-page-title-job {
@@ -95,6 +96,7 @@ body {
   text-transform: uppercase;
   text-align: center;
   color: var(--txt-c-light);
+  margin: 0px 0px 22px 0px;
 }
 
 .front-page-discription {
@@ -107,6 +109,16 @@ body {
 }
 .navigation {
   width: 100%;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.navigation-part {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
 }
 
 .hire-me-button {
@@ -117,6 +129,7 @@ body {
   letter-spacing: 0.05em;
   text-transform: uppercase;
   color: var(--txt-c-accent);
+  padding-right: 22px;
 }
 .mobile-menu {
   width: 30px;
@@ -124,10 +137,13 @@ body {
   background-color: var(--c-accent);
   display: block;
   text-decoration: none;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
 }
 .mobile-menu .fa-bars {
   color: var(--txt-c-light);
-  width: 10px;
 }
 .logo-link {
   text-decoration: none;
