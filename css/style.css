@@ -81,6 +81,7 @@ body {
   padding: 20px 35px;
   outline: none;
   border: none;
+  cursor: pointer;
 }
 
 .container {
@@ -425,6 +426,7 @@ body {
 .team-projects .container {
   position: relative;
   overflow-x: hidden;
+  padding-bottom: 0;
 }
 
 .team-projects-title {
@@ -468,4 +470,43 @@ body {
 .callback-form-container {
   background-color: var(--c-dark);
   padding: 35px 30px 40px 30px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 100%;
+  box-sizing: border-box;
+}
+
+.callback-form-title {
+  font-weight: bold;
+  font-size: 24px;
+  line-height: 29px;
+  text-align: center;
+  text-transform: uppercase;
+  color: var(--txt-c-light);
+  width: 260px;
+  margin: 0 0 20px 0;
+}
+.callback-form-descr {
+  font-weight: normal;
+  font-size: 17px;
+  line-height: 150%;
+  text-align: center;
+  color: var(--txt-c-light);
+  width: 260px;
+  margin: 0 0 30px 0;
+}
+.callback-form-input {
+  background: transparent;
+  border: none;
+  outline: none;
+  text-align: center;
+  padding: 10px 10px 15px 10px;
+  border-bottom: 1px solid var(--c-grey-blue);
+  margin-bottom: 24px;
+  color: var(--c-grey-blue);
+}
+.callback-form-submit .accent-btn {
+  width: 241px;
+  padding: 14px 13px 14px 13px;
 }

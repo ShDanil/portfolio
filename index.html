@@ -331,10 +331,23 @@
           <p class="callback-form-descr">
             Leave a request to discuss the task and technical requirements
           </p>
-          <input type="text" class="callback-form-name" value="Name" />
-          <input type="text" class="callback-form-email" value="Email" />
-          <input type="text" class="callback-form-phone" value="Phone" />
-          <input type="text" class="callback-form-submit" />
+          <input type="text" class="callback-form-input" placeholder="Name" />
+          <input
+            type="emailw"
+            class="callback-form-input"
+            placeholder="Email"
+          />
+          <input
+            type="tel"
+            class="callback-form-input"
+            placeholder="Phone"
+            pattern="[0-9]{3}-[0-9]{2}-[0-9]{3}"
+          />
+          <input
+            type="submit"
+            class="callback-form-submit accent-btn"
+            value="Discuss the project  —"
+          />
         </form>
       </div>
     </section>
