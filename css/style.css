@@ -68,6 +68,10 @@ body {
   font-family: var(--font-main);
 }
 
+html {
+  scroll-behavior: smooth;
+}
+
 /* COMMON*/
 
 .accent-btn {
@@ -107,7 +111,97 @@ body {
   text-transform: uppercase;
   color: var(--txt-c-light);
 }
+/* MODAL*/
 
+.modal {
+  position: fixed;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 100%;
+  opacity: 0;
+  transition: opacity 0.3s ease-in-out;
+  pointer-events: none;
+  display: block;
+}
+
+.modal-close-btn {
+  font-size: 18px;
+  color: var(--c-grey-blue);
+  position: absolute;
+  top: 16px;
+  right: 16px;
+  cursor: pointer;
+}
+
+.mobile-menu-close-button {
+  background-color: var(--c-accent);
+  color: var(--c-light);
+  padding: 10px 14px;
+}
+
+.mobile-menu-container {
+  height: 70%;
+  justify-content: space-between;
+  margin: 0;
+}
+.modal-active {
+  opacity: 1;
+  pointer-events: all;
+}
+
+.modal-mobile-menu {
+  background-color: var(--c-light);
+}
+
+.modal-mobile-content {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+  height: 100%;
+}
+.mobile-menu-contacts {
+  display: flex;
+  flex-direction: column;
+}
+.mobile-menu-items {
+  display: flex;
+  flex-direction: column;
+}
+.mobile-menu-item {
+  font-weight: bold;
+  font-size: 15px;
+  line-height: 18px;
+  letter-spacing: 0.05em;
+  text-transform: uppercase;
+  color: var(--txt-c-grey);
+  text-decoration: none;
+  text-align: center;
+  margin: 0 0 35px 0;
+}
+
+.mobile-menu-phone {
+  font-family: Acrom;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 17px;
+  line-height: 150%;
+  text-align: center;
+  color: var(--txt-c-dark);
+  text-decoration: none;
+  margin-bottom: 15px;
+}
+
+.mobile-menu-email {
+  font-family: Acrom;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 17px;
+  line-height: 150%;
+  text-align: center;
+  text-decoration: none;
+  color: var(--txt-c-dark);
+}
 /* FRONT PAGE*/
 
 .front-page {
