@@ -16,6 +16,10 @@
   --txt-c-accent: var(--c-accent);
   --txt-c-light: var(--c-light);
 
+  /* modals */
+
+  --modal-bgd-dark: rgba(20, 29, 45, 0.8);
+
   /* font */
   --font-main: "Acrom", sans-serif;
 
@@ -123,6 +127,7 @@ html {
   transition: opacity 0.3s ease-in-out;
   pointer-events: none;
   display: block;
+  background-color: var(--modal-bgd-dark);
 }
 
 .modal-close-btn {
@@ -134,10 +139,27 @@ html {
   cursor: pointer;
 }
 
+/* mobile-menu-modal*/
+
+.my-video-content {
+  width: 100%;
+}
+
+.my-video-container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100%;
+  padding: 20px 10px;
+}
 .mobile-menu-close-button {
   background-color: var(--c-accent);
   color: var(--c-light);
   padding: 10px 14px;
+}
+.my-video-close-button {
+  background-color: var(--c-light);
+  color: var(--txt-c-dark);
 }
 
 .mobile-menu-container {
