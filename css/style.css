@@ -142,6 +142,54 @@ html {
   cursor: pointer;
 }
 
+/* modal-request*/
+
+.modal-request-window {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 20px 10px 20px 10px;
+  box-sizing: border-box;
+}
+.request-container {
+  background-color: var(--c-light);
+  padding: 80px 10px 80px 10px;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+}
+.request-title {
+  font-weight: bold;
+  font-size: 24px;
+  line-height: 29px;
+  color: var(--txt-c-accent);
+  text-transform: uppercase;
+  margin-bottom: 20px;
+  margin-top: 0;
+}
+.request-content-message {
+  font-weight: bold;
+  font-size: 36px;
+  line-height: 43px;
+  text-align: center;
+  text-transform: uppercase;
+  color: var(--txt-c-dark);
+  margin-bottom: 20px;
+  margin-top: 0;
+}
+.request-content-contact {
+  font-weight: normal;
+  font-size: 17px;
+  line-height: 25px;
+  text-align: center;
+  color: var(--txt-c-dark);
+  width: 185px;
+  margin: 0;
+}
+
 /* mobile-menu-modal*/
 
 .my-video-content {
