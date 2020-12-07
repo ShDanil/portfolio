@@ -116,6 +116,9 @@ html {
   color: var(--txt-c-light);
 }
 /* MODAL*/
+.body-scroll-disable {
+  overflow: hidden;
+}
 
 .modal {
   position: fixed;
