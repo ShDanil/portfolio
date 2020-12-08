@@ -728,6 +728,9 @@ html {
   width: 241px;
   padding: 14px 13px 14px 13px;
 }
+.callback-form-input-error {
+  border: 1px solid red;
+}
 /* CALCULATOR FORM SECTION */
 
 .calculator {
