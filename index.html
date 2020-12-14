@@ -406,14 +406,27 @@
     </section>
     <section class="calculator" id="calculator">
       <div class="container">
-        <h3 class="calculator-title section-title">
+        <h3 class="calculator-title section-title mobile-element">
           Calculate_ the cost of a future project
         </h3>
-        <p class="calculator-descr">
-          <span>This is an</span>
-          <span class="calculator-descr-accent">approximate</span>
-          <span>calculation.</span>
-        </p>
+        <h3 class="calculator-title section-title tablet-element">
+          Calculate_ <br />
+          the cost of a <br />
+          future project
+        </h3>
+        <div class="mobile-element">
+          <p class="calculator-descr">
+            <span>This is an</span>
+            <span class="calculator-descr-accent">approximate</span>
+            <span>calculation.</span>
+          </p>
+        </div>
+        <div class="tablet-element">
+          <p class="calculator-descr">
+            <span>This is an approximate</span>
+            <span>calculation.</span>
+          </p>
+        </div>
         <img
           src="img/calculator.svg"
           alt="calculator"
@@ -541,19 +554,25 @@
           <input
             type="submit"
             value="Find out the cost  —"
-            class="accent-btn"
+            class="accent-btn tablet-btn"
           />
         </form>
       </div>
     </section>
     <section class="footer" id="contacts">
       <div class="container">
-        <p class="footer-name">Danila Shanygin</p>
-        <p class="footer-job">Frontend Developer</p>
-        <a href="tel:88005553535" class="footer-phone"> 8-800-555-35-35</a>
-        <a href="mailto:deniil2607@gmail.com" class="footer-email"
-          >deniil2607@gmail.com</a
-        >
+        <div class="footer-name-and-contacts-container">
+          <div class="footer-my-name">
+            <p class="footer-name">Danila Shanygin</p>
+            <p class="footer-job">Frontend Developer</p>
+          </div>
+          <div class="footer-my-contacts">
+            <a href="tel:88005553535" class="footer-phone"> 8-800-555-35-35</a>
+            <a href="mailto:deniil2607@gmail.com" class="footer-email"
+              >deniil2607@gmail.com</a
+            >
+          </div>
+        </div>
         <div class="footer-socialnetworks-container">
           <a
             href="https://github.com/ShDanil"
