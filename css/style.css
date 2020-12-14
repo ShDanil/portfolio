@@ -77,7 +77,15 @@ html {
 }
 
 /* COMMON*/
-
+.mobile-element {
+  display: block;
+}
+.tablet-element {
+  display: none;
+}
+.desktop-element {
+  display: none;
+}
 .accent-btn {
   background-color: var(--c-accent);
   color: var(--txt-c-light);
@@ -327,7 +335,7 @@ html {
 /* FRONT PAGE*/
 
 .front-page {
-  width: 320px;
+  min-width: 320px;
   background-color: var(--c-dark);
   padding: 30px 10px 50px 10px;
   box-sizing: border-box;
@@ -356,6 +364,16 @@ html {
   text-align: center;
   color: var(--txt-c-light);
   margin: 0px 0px 20px 0px;
+}
+.front-page-my-info {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.front-page-about-me-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 }
 
 .front-page-discription {
@@ -938,4 +956,136 @@ html {
   border-left: none;
   margin: 0;
   padding-left: 8px;
+}
+
+@media only screen and (min-width: 640px) {
+  .front-page {
+    padding-bottom: 70px;
+    min-width: 640px;
+  }
+  .mobile-element {
+    display: none;
+  }
+  .tablet-element {
+    display: block;
+  }
+  .front-page-title-name {
+    font-size: 36px;
+    line-height: 43px;
+    margin-bottom: 0;
+  }
+  .front-page-title-job {
+    margin-top: 20px;
+    margin-bottom: 30px;
+    font-size: 55px;
+    line-height: 66px;
+  }
+  .front-page-profession-part-1 {
+    margin-right: 40px;
+  }
+  .front-page-profession-part-2 {
+    margin-left: 38px;
+  }
+  .front-page-discription {
+    font-size: 17px;
+    line-height: 150%;
+    width: 385px;
+    margin-top: 0;
+    margin-bottom: 40px;
+  }
+  .front-page-gallery-btn {
+    width: 400px;
+    height: 60px;
+  }
+  .front-page-my-photo {
+    width: 140px;
+    margin-right: 35px;
+    margin-bottom: 0;
+  }
+  .front-page-my-info {
+    display: flex;
+    align-items: center;
+    flex-direction: row;
+    margin-bottom: 60px;
+  }
+  .front-page-about-me-container {
+    align-items: flex-start;
+  }
+  .front-page-my-video-btn {
+    margin-bottom: 0;
+  }
+  .front-page-my-description {
+    width: 150px;
+    text-align: left;
+  }
+  .front-page-laptop {
+    width: 400px;
+    margin-bottom: 90px;
+  }
+  .about .container {
+    position: relative;
+  }
+
+  .about-img-text {
+    position: absolute;
+    right: 22px;
+    top: 228px;
+    font-size: 200px;
+    line-height: 240px;
+  }
+
+  .about-img {
+    width: 361px;
+    height: 390px;
+    left: -105px;
+    top: 70px;
+  }
+
+  .about-img-container {
+    margin-bottom: 0;
+  }
+
+  .about-title {
+    font-size: 50px;
+    line-height: 60px;
+    width: 600px;
+  }
+
+  .about-descr {
+    font-size: 36px;
+    line-height: 43px;
+    margin-bottom: 60px;
+  }
+  .about-text {
+    width: 338px;
+  }
+  .about-text:last-child {
+    width: 320px;
+    margin-bottom: 84px;
+  }
+
+  .team-projects-title,
+  .personal-projects-title {
+    text-align: left;
+    width: 400px;
+    font-size: 50px;
+    line-height: 60px;
+  }
+
+  .team-project-item,
+  .personal-project-item {
+    margin: 0 25px 40px 25px;
+  }
+
+  .callback-form .container,
+  .personal-projects .container,
+  .team-projects .container {
+    align-items: normal;
+  }
+
+  .team-projects-title-bgd {
+    font-size: 200px;
+    line-height: 240px;
+    top: 19px;
+  }
 }
