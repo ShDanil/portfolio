@@ -78,7 +78,7 @@ function renderSum(sum) {
 
   totalCostElement.textContent = "Calculating...";
 
-  setTimeout(() => (totalCostElement.textContent = `${sum}$`), 1500);
+  setTimeout(() => (totalCostElement.textContent = `${sum}$`), 1000);
 }
 
 function convetCartOptionToPrice(option) {

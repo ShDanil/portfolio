@@ -1117,7 +1117,7 @@ html {
 
   .callback-form-input,
   .callback-form-descr {
-    width: 356px;
+    width: 355px;
     box-sizing: border-box;
   }
   /* CALCULATOR*/
@@ -1146,7 +1146,7 @@ html {
   .calculator-icon {
     position: absolute;
     right: 10px;
-    top: 398px;
+    top: 399px;
     width: 344px;
     z-index: 1;
   }
