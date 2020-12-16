@@ -77,15 +77,18 @@ html {
 }
 
 /* COMMON*/
-.mobile-element {
-  display: block;
-}
+
 .tablet-element {
   display: none;
 }
+
 .desktop-element {
   display: none;
 }
+.mobile-element {
+  display: block;
+}
+
 .accent-btn {
   background-color: var(--c-accent);
   color: var(--txt-c-light);
@@ -1229,7 +1232,17 @@ html {
     align-items: flex-start;
     order: 2;
     z-index: 2;
+    position: relative;
   }
+
+  .front-page-my-photo {
+    position: absolute;
+    width: 256px;
+    z-index: 1;
+    right: -125px;
+    bottom: 330px;
+  }
+
   .front-page-discription {
     text-align: start;
     margin-bottom: 64px;
@@ -1276,9 +1289,85 @@ html {
     text-align: left;
   }
 
-  /*  IMPORTANT REBUILT*/
-  /* .front-page-about-me-container {
-    flex-direction: column;
-    justify-content: flex-end;
-  } */
+  /* Galleries */
+
+  .team-project-item-wrapper,
+  .personal-project-item-wrapper {
+    display: flex;
+    flex-wrap: wrap;
+  }
+
+  .team-project-item,
+  .personal-project-item {
+    width: calc(50% - 20px);
+  }
+
+  .team-project-item:nth-child(odd),
+  .personal-project-item:nth-child(odd) {
+    margin: 0 20px 40px 0;
+  }
+
+  .team-project-item:nth-child(even),
+  .personal-project-item:nth-child(even) {
+    margin: 0 0 40px 20px;
+  }
+
+  .team-projects-title,
+  .personal-projects-title {
+    font-size: 70px;
+    line-height: 84px;
+    width: 530px;
+  }
+
+  .team-projects-title-bgd {
+    font-size: 250px;
+    line-height: 300px;
+    top: 35px;
+    left: 274px;
+  }
+
+  .front-page-about-me-container {
+    align-items: flex-end;
+  }
+  .hire-me-button {
+    padding-right: 0;
+  }
+
+  .desktop-menu-item {
+    font-weight: bold;
+    font-size: 15px;
+    line-height: 18px;
+    text-decoration: none;
+    letter-spacing: 0.05em;
+    text-transform: uppercase;
+    color: var(--txt-c-grey);
+    padding-right: 35px;
+  }
+
+  .desktop-menu-item:last-child {
+    padding-right: 0;
+  }
+
+  .front-page-navigation-links-container {
+    display: flex;
+    justify-content: space-between;
+    padding-left: 108px;
+  }
+  .front-page-my-video-btn {
+    width: 116px;
+    padding-left: 27px;
+  }
+  .hire-me-button {
+    font-style: normal;
+    font-weight: 700;
+    font-size: 15px;
+    line-height: 18px;
+    text-align: right;
+    letter-spacing: 0.05em;
+    text-transform: uppercase;
+  }
+
+  .desktop-menu-item:hover {
+    color: var(--txt-c-accent);
+  }
 }
