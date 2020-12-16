@@ -1350,9 +1350,8 @@ html {
 
   .front-page-navigation-links-container {
     display: flex;
-
     justify-content: space-between;
-    padding-left: 108px;
+    margin-left: 108px;
   }
   .front-page-my-video-btn {
     width: 116px;
