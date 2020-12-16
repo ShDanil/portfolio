@@ -1341,15 +1341,16 @@ html {
     letter-spacing: 0.05em;
     text-transform: uppercase;
     color: var(--txt-c-grey);
-    padding-right: 35px;
+    margin-right: 35px;
   }
 
   .desktop-menu-item:last-child {
-    padding-right: 0;
+    margin-right: 0;
   }
 
   .front-page-navigation-links-container {
     display: flex;
+
     justify-content: space-between;
     padding-left: 108px;
   }
