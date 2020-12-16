@@ -1238,7 +1238,7 @@ html {
   .front-page-my-photo {
     position: absolute;
     width: 256px;
-    z-index: 1;
+    z-index: -1;
     right: -125px;
     bottom: 330px;
   }
