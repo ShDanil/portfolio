@@ -143,6 +143,7 @@ html {
   pointer-events: none;
   display: block;
   background-color: var(--modal-bgd-dark);
+  z-index: 3;
 }
 
 .modal-close-btn {
@@ -471,7 +472,7 @@ html {
   font-weight: bold;
   font-size: 15px;
   line-height: 18px;
-
+  cursor: pointer;
   text-align: right;
   letter-spacing: 0.05em;
   text-transform: uppercase;
@@ -1536,5 +1537,46 @@ html {
   .calculator-text {
     width: 348px;
     z-index: 2;
+  }
+
+  /*Footer */
+
+  .footer .container {
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    padding-top: 50px;
+    padding-bottom: 50px;
+  }
+  .footer-name-and-contacts-container {
+    width: calc(50% + 100px);
+    justify-content: space-between;
+    margin-top: 0;
+    align-items: center;
+  }
+  .footer-phone {
+    margin-bottom: 0;
+    text-align: center;
+  }
+  .footer-job {
+    margin: 0;
+  }
+  .footer-socialnetworks-container {
+    margin: 0;
+  }
+  /* Modals*/
+
+  .request-content-message {
+    width: 350px;
+  }
+  .request-content-contact {
+    width: 100%;
+  }
+  .request-container {
+    padding: 60px 130px 80px 130px;
+  }
+  .project-modal-container {
+    padding: 95px;
   }
 }
