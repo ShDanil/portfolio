@@ -13,7 +13,8 @@
     <link rel="stylesheet" href="css/normalize.min.css" />
     <link rel="stylesheet" href="css/font-awesome.min.css" />
     <link rel="stylesheet" href="/css/choices.min.css" />
-    <link rel="stylesheet" href="css/style.css"" />
+    <link rel="stylesheet" href="css/style.css" />
+    <link rel="stylesheet" href="/css/aos.css" />
   </head>
 
   <body>
@@ -47,6 +48,8 @@
               src="img/my-photo.jpg"
               alt="my photo"
               class="front-page-my-photo desktop-element"
+              data-aos="fade-down"
+              data-aos-delay="1000"
             />
 
             <h1 class="front-page-title-name">[Danila Shanygin]</h1>
@@ -56,8 +59,8 @@
             </h2>
 
             <p class="front-page-discription">
-              / Using HTML, CSS, JavaScript, React Native and Node.js I help to
-              build websites, small and medium web apps for business
+              / Using HTML, CSS, JavaScript, React and Node.js I help to build
+              websites, small and medium web apps for business
             </p>
             <a href="#projects" class="front-page-gallery-btn accent-btn">
               See my recent works —
@@ -69,7 +72,11 @@
               alt="my-photo"
               class="front-page-my-photo mobile-element tablet-element"
             />
-            <div class="front-page-about-me-container">
+            <div
+              class="front-page-about-me-container"
+              data-aos="fade-left"
+              data-aos-delay="1500"
+            >
               <p class="front-page-my-description mobile-element">
                 About me in 2 minutes
               </p>
@@ -86,7 +93,11 @@
             </div>
           </div>
           <img src="/img/laptop.svg" alt="laptop" class="front-page-laptop" />
-          <div class="experience-container">
+          <div
+            class="experience-container"
+            data-aos="fade-right"
+            data-aos-delay="500"
+          >
             <h3 class="experience-title">My Coding Skills & Experience</h3>
             <div class="experience-wrapper">
               <div class="experience-skill-container">
@@ -207,7 +218,13 @@
     <section class="about" id="about">
       <div class="container container-left">
         <div class="about-content-wrapper">
-          <h3 class="section-title about-title">I code things from scratch_</h3>
+          <h3
+            class="section-title about-title"
+            data-aos="fade-right"
+            data-aos-delay="500"
+          >
+            I code things from scratch_
+          </h3>
 
           <p class="about-descr mobile-element">
             <span>[and help to</span>
@@ -215,7 +232,11 @@
             <span>apps]</span>
           </p>
 
-          <div class="tablet-element desktop-element">
+          <div
+            class="tablet-element desktop-element"
+            data-aos="fade-right"
+            data-aos-delay="1000"
+          >
             <p class="about-descr">
               <span>[and help to create</span>
               <span>great web apps]</span>
@@ -232,19 +253,27 @@
               />
             </p>
           </div>
-          <p class="about-text mobile-element desktop-element">
+          <p
+            class="about-text mobile-element desktop-element"
+            data-aos="fade-right"
+            data-aos-delay="1100"
+          >
             / I will help you to create a high-performance Landing Page,
             functional corporate website for your business, interactive web app
             for SaaS, startup, or other services.
           </p>
-          <p class="about-text tablet-element">
+          <p
+            class="about-text tablet-element"
+            data-aos="fade-right"
+            data-aos-delay="1200"
+          >
             / I will help you to create a<br />
             high-performance Landing Page,<br />
             functional corporate website for your<br />
             business, interactive web app for<br />
             SaaS, startup, or other services.
           </p>
-          <p class="about-text">
+          <p class="about-text" data-aos="fade-right" data-aos-delay="1300">
             / My specialization is front-end development — client side of the
             web. But I also have full-stack developer experience.
           </p>
@@ -261,7 +290,10 @@
 
     <section class="personal-projects" id="projects">
       <div class="container">
-        <h3 class="section-title personal-projects-title">
+        <h3
+          class="section-title personal-projects-title"
+          data-aos="fade-up-right"
+        >
           My personal _projects
         </h3>
         <div class="personal-project-item-wrapper">
@@ -371,7 +403,9 @@
     <section class="team-projects" id="">
       <div class="container">
         <span class="team-projects-title-bgd">TEAM</span>
-        <h3 class="section-title team-projects-title">Teamwork _projects</h3>
+        <h3 class="section-title team-projects-title" data-aos="fade-up-right">
+          Teamwork _projects
+        </h3>
 
         <div class="team-project-item-wrapper">
           <div class="team-project-item">
@@ -498,7 +532,7 @@
           </p>
         </div>
 
-        <form action="" class="calculator-form">
+        <form action="" class="calculator-form" data-aos="flip-right">
           <div class="calculator-form-input">
             <label
               for="calculator-form-website-type"
@@ -926,5 +960,7 @@
     <script src="/js/choices.min.js"></script>
     <script src="/js/calculator.js"></script>
     <script src="/js/callback-form.js"></script>
+    <script src="/js/aos.js"></script>
+    <script src="/js/animation-on-scroll.js"></script>
   </body>
 </html>

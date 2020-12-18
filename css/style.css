@@ -33,6 +33,8 @@
   /* animation */
   --animation-fast: 0.1s;
   --animation-slow: 0.3s;
+  --animation-transition: all 0.2s ease-in-out;
+  --animation-transition-fast: all 0.1s ease-in-out;
 }
 
 @font-face {
@@ -102,6 +104,12 @@ html {
   border: none;
   cursor: pointer;
   text-decoration: none;
+  transition: var(--animation-transition-fast);
+}
+.accent-btn:hover {
+  outline: 1px solid var(--c-accent);
+  background: transparent;
+  color: var(--txt-c-accent);
 }
 
 .container {
@@ -266,6 +274,16 @@ html {
   margin: 0 0 35px 0;
 }
 
+.mobile-menu-item:hover {
+  color: var(--txt-c-accent);
+  transition: var(--animation-transition);
+}
+
+.desktop-menu-item:hover {
+  color: var(--txt-c-accent);
+  transition: var(--animation-transition);
+}
+
 .mobile-menu-phone {
   font-family: Acrom;
   font-style: normal;
@@ -428,6 +446,10 @@ html {
   color: var(--txt-c-accent);
   padding-right: 22px;
 }
+.hire-me-button:hover {
+  transition: var(--animation-transition-fast);
+  transform: scale(1.1);
+}
 .mobile-menu {
   width: 30px;
   height: 30px;
@@ -438,12 +460,18 @@ html {
   flex-direction: row;
   justify-content: center;
   align-items: center;
+  outline: var(--c-accent);
 }
+
 .mobile-menu .fa-bars {
   color: var(--txt-c-light);
 }
 .logo-link {
   text-decoration: none;
+  transition: var(--animation-transition-fast);
+}
+.logo-link:hover {
+  transform: scale(1.1);
 }
 
 .front-page-gallery-btn {
@@ -481,6 +509,12 @@ html {
   display: flex;
   align-items: center;
   margin-bottom: 38px;
+}
+.front-page-my-video-btn:hover {
+  outline: var(--c-light);
+  background-color: var(--c-accent);
+  color: var(--c-light);
+  transition: var(--animation-transition-fast);
 }
 .play-btn {
   font-size: 9px;
@@ -1229,6 +1263,17 @@ html {
   .footer-phone {
     text-align: end;
   }
+  /*MODALS*/
+  .request-content-message {
+    width: 353px;
+  }
+  .request-content-contact {
+    width: auto;
+  }
+
+  .request-container {
+    padding: 64px 126px 78px 126px;
+  }
 }
 
 @media only screen and (min-width: 1000px) {
@@ -1385,10 +1430,6 @@ html {
     text-align: right;
     letter-spacing: 0.05em;
     text-transform: uppercase;
-  }
-
-  .desktop-menu-item:hover {
-    color: var(--txt-c-accent);
   }
 
   /* About me*/
