@@ -81,14 +81,14 @@ html {
 /* COMMON*/
 
 .tablet-element {
-  display: none;
+  display: none !important;
 }
 
 .desktop-element {
-  display: none;
+  display: none !important;
 }
 .mobile-element {
-  display: block;
+  display: block !important;
 }
 
 .accent-btn {
@@ -161,6 +161,11 @@ html {
   top: 16px;
   right: 16px;
   cursor: pointer;
+}
+.swiper-container {
+  width: 300px;
+  height: auto;
+  margin-bottom: 30px;
 }
 
 /* modal-request*/
@@ -1034,11 +1039,15 @@ html {
   .front-page {
     padding-bottom: 70px;
   }
+  .swiper-container {
+    width: 600px;
+  }
+
   .mobile-element {
-    display: none;
+    display: none !important;
   }
   .tablet-element {
-    display: block;
+    display: block !important;
   }
   .front-page-title-name {
     font-size: 36px;
@@ -1280,11 +1289,14 @@ html {
   .container {
     max-width: var(--desktop-lg);
   }
+  .swiper-container {
+    width: 900px;
+  }
   .tablet-element {
-    display: none;
+    display: none !important;
   }
   .desktop-element {
-    display: block;
+    display: block !important;
   }
   .front-page-title-job {
     font-size: 70px;
